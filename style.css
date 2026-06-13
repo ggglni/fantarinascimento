@@ -59,6 +59,7 @@ nav {
 }
 
 .nav-logo span { color: var(--white); }
+a.nav-logo { text-decoration: none; }
 
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 
