@@ -220,6 +220,29 @@ nav {
 .card-title { font-family: var(--font-head); font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.4rem; }
 .card-text { font-size: 0.9rem; color: var(--gray); }
 
+/* ===== BOSKOV QUOTE ===== */
+.boskov-quote {
+  text-align: center;
+  max-width: 680px;
+  border: none;
+}
+.boskov-quote p {
+  font-family: var(--font-head);
+  font-size: clamp(1.15rem, 3vw, 1.55rem);
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+.boskov-quote cite {
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
 /* ===== CLASSIFICA TABLE ===== */
 .table-wrap { overflow-x: auto; }
 
@@ -358,14 +381,22 @@ tbody td {
 .giocatore-info .name { font-weight: 700; font-size: 1rem; color: var(--white); }
 .giocatore-info .squad { font-size: 0.82rem; color: var(--gold-light); margin-top: 1px; }
 
-.giocatore-stats {
-  padding: 1rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
+.giocatore-body {
+  padding: 1rem 1.25rem 1.25rem;
 }
-.g-stat { text-align: center; }
-.g-stat-num { font-size: 1.3rem; font-weight: 700; color: var(--gold); }
-.g-stat-label { font-size: 0.7rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; }
+.giocatore-dal {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+.giocatore-desc {
+  font-size: 0.88rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
 
 /* ===== PAGE HERO (inner pages) ===== */
 .page-hero {
@@ -381,6 +412,43 @@ tbody td {
   margin-bottom: 0.4rem;
 }
 .page-hero p { color: var(--gray); font-size: 1rem; max-width: 500px; margin: 0 auto; }
+
+/* ===== REGOLAMENTO ===== */
+.reg-section { max-width: 760px; }
+
+.reg-block { margin-bottom: 3rem; }
+
+.reg-title {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+.reg-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.reg-list li {
+  font-size: 0.95rem;
+  color: var(--gray);
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.reg-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--green-light);
+  font-weight: 700;
+}
+
+.reg-list li strong { color: var(--white); }
 
 /* ===== FOOTER ===== */
 footer {
