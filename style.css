@@ -387,6 +387,13 @@ tbody td {
 .albo-owner { font-size: 0.85rem; color: var(--gray); }
 .albo-pts { font-size: 0.8rem; color: var(--gold-light); margin-top: 0.4rem; }
 
+.albo-stagione {
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
 /* ===== GIOCATORI PAGE ===== */
 .giocatori-grid {
   display: grid;
