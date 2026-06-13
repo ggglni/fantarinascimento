@@ -461,9 +461,79 @@ footer {
 footer p { font-size: 0.82rem; color: var(--gray); }
 footer strong { color: var(--gold); }
 
+/* ===== HAMBURGER BUTTON ===== */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  z-index: 200;
+}
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.2s;
+}
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
-  .nav-links { gap: 1rem; }
-  .nav-links a { font-size: 0.82rem; }
-  .stats-bar .section { justify-content: center; }
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-toggle { display: flex; }
+
+  .nav-inner { flex-wrap: wrap; height: auto; padding: 0 1.25rem; }
+  .nav-logo { height: 64px; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding: 0.25rem 0 0.75rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-links.open { display: flex; }
+
+  .nav-links li { border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .nav-links a {
+    display: block;
+    padding: 0.85rem 0;
+    font-size: 1rem;
+    border-bottom: none;
+  }
+  .nav-links a.active { color: var(--gold-light); }
+
+  /* Hero */
+  .hero { padding: 4rem 1.25rem 3.5rem; }
+  .hero-subtitle { font-size: 0.95rem; }
+
+  /* Sections */
+  .section { padding: 2.5rem 1.25rem; }
+  .page-hero { padding: 2.5rem 1.25rem 2rem; }
+
+  /* Grids → colonna singola */
+  .giocatori-grid,
+  .albo-grid,
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Table */
+  thead th, tbody td { padding: 0.65rem 0.5rem; }
+  table { font-size: 0.85rem; }
+
+  /* Albo campione inline card */
+  .albo-campione-card { padding: 1.75rem 1.25rem; }
+
+  /* Footer */
+  footer { margin-top: 2rem; }
 }

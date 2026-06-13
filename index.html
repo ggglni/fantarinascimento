@@ -12,7 +12,10 @@
   <nav>
     <div class="nav-inner">
       <div class="nav-logo">⚽ <span>Fanta</span>rinascimento</div>
-      <ul class="nav-links">
+      <button class="nav-toggle" aria-label="Menu" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="giocatori.html">Giocatori</a></li>
         <li><a href="albo-doro.html">Albo d'Oro</a></li>
@@ -28,10 +31,28 @@
     <a href="giocatori.html" class="btn">Scopri i Giocatori</a>
   </section>
 
+  <!-- QUOTE BAR -->
+  <div class="stats-bar">
+    <div class="section" style="justify-content: center; padding: 2.5rem 2rem;">
+      <blockquote class="boskov-quote">
+        <p>&#8220;Se uomo ama donna più di birra gelata davanti a tv con finale Champions&#8230; forse vero amore, ma non vero uomo.&#8221;</p>
+        <cite>— Vujadin Boškov</cite>
+      </blockquote>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer>
     <p>⚽ <strong>Fantarinascimento</strong> &nbsp;·&nbsp; Stagione 2025/2026</p>
   </footer>
 
+  <script>
+    var t = document.getElementById('nav-toggle');
+    var l = document.getElementById('nav-links');
+    t.addEventListener('click', function() {
+      t.classList.toggle('open');
+      l.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
