@@ -324,7 +324,7 @@ tbody td {
 }
 
 .titolo-icon { font-size: 3.5rem; margin-bottom: 0.5rem; line-height: 1; }
-.titolo-logo { width: 3.5rem; height: 3.5rem; display: block; margin: 0 auto; }
+.titolo-logo { width: 90px; height: 90px; display: block; margin: 0 auto; object-fit: contain; }
 
 .titolo-label {
   font-size: 0.7rem;
