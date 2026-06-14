@@ -581,13 +581,64 @@ footer strong { color: var(--gold); }
     grid-template-columns: 1fr;
   }
 
-  /* Table */
-  thead th, tbody td { padding: 0.65rem 0.5rem; }
-  table { font-size: 0.85rem; }
-
-  /* Albo campione inline card */
-  .albo-campione-card { padding: 1.75rem 1.25rem; }
-
   /* Footer */
   footer { margin-top: 2rem; }
+
+  /* ---- Tabelle albo-table e stat-table: layout a card su mobile ---- */
+  .table-wrap { overflow-x: visible; }
+
+  .albo-table,
+  .stat-table { display: block; }
+
+  .albo-table thead,
+  .stat-table thead { display: none; }
+
+  .albo-table tbody,
+  .stat-table tbody { display: block; }
+
+  .albo-table tr,
+  .stat-table tr {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .albo-table td,
+  .stat-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.88rem;
+  }
+
+  .albo-table td:last-child,
+  .stat-table td:last-child { border-bottom: none; }
+
+  .albo-table td::before,
+  .stat-table td::before {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    flex-shrink: 0;
+    margin-right: 1rem;
+  }
+
+  /* Label per albo-table */
+  .albo-table td:nth-child(1)::before { content: 'Stagione'; }
+  .albo-table td:nth-child(2)::before { content: '🏆 Campionato'; }
+  .albo-table td:nth-child(3)::before { content: '⭐ Champions'; }
+  .albo-table td:nth-child(4)::before { content: '🥇 Coppa Italia'; }
+
+  /* Label per stat-table */
+  .stat-table td:nth-child(1)::before { content: 'Manager'; }
+  .stat-table td:nth-child(2)::before { content: '🏆 Camp.'; }
+  .stat-table td:nth-child(3)::before { content: '⭐ Champ.'; }
+  .stat-table td:nth-child(4)::before { content: '🥇 Coppa'; }
 }
