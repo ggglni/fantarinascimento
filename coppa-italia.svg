@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="cc">
+      <!-- Cup bowl shape -->
+      <path d="M16,8 L84,8 L74,68 L26,68 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Italian tricolor inside the cup -->
+  <rect x="16" y="8" width="23" height="60" fill="#009246" clip-path="url(#cc)"/>
+  <rect x="39" y="8" width="22" height="60" fill="#f0f0f0" clip-path="url(#cc)"/>
+  <rect x="61" y="8" width="23" height="60" fill="#ce2b37" clip-path="url(#cc)"/>
+
+  <!-- Cup outline -->
+  <path d="M16,8 L84,8 L74,68 L26,68 Z" fill="none" stroke="#c9a84c" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Handles -->
+  <path d="M16,14 Q2,32 2,46 Q2,60 16,58" fill="none" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M84,14 Q98,32 98,46 Q98,60 84,58" fill="none" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Top rim -->
+  <rect x="13" y="6" width="74" height="8" rx="3" fill="#c9a84c"/>
+
+  <!-- Stem -->
+  <rect x="43" y="68" width="14" height="16" fill="#c9a84c"/>
+
+  <!-- Base -->
+  <rect x="27" y="84" width="46" height="9" rx="3" fill="#c9a84c"/>
+</svg>

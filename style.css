@@ -323,7 +323,8 @@ tbody td {
   text-align: center;
 }
 
-.titolo-icon { font-size: 3.5rem; margin-bottom: 0.5rem; }
+.titolo-icon { font-size: 3.5rem; margin-bottom: 0.5rem; line-height: 1; }
+.titolo-logo { width: 3.5rem; height: 3.5rem; display: block; margin: 0 auto; }
 
 .titolo-label {
   font-size: 0.7rem;
