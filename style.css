@@ -160,7 +160,7 @@ a.nav-logo { text-decoration: none; }
 .btn:hover { background: var(--gold-light); color: var(--green-dark); transform: translateY(-2px); }
 
 .asta-info {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
@@ -203,7 +203,6 @@ a.nav-logo { text-decoration: none; }
 .stats-bar {
   background: var(--card-bg);
   border-top: 1px solid rgba(201,168,76,0.2);
-  border-bottom: 1px solid rgba(201,168,76,0.2);
 }
 .stats-bar .section {
   display: flex;
