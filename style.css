@@ -459,7 +459,7 @@ tbody td {
 }
 
 .giocatore-info .name { font-weight: 700; font-size: 1rem; color: var(--white); }
-.giocatore-info .soprannome { font-size: 0.82rem; color: var(--gold-light); margin-top: 1px; font-style: italic; }
+.giocatore-info .soprannome { font-size: 0.85rem; font-weight: 700; color: var(--gold); margin-top: 2px; font-style: italic; }
 
 .giocatore-body {
   padding: 1rem 1.25rem 1.25rem;
