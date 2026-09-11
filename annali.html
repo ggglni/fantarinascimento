@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annali – FantaRinascimento</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">⚽ <span>Fanta<em>Rinascimento</em></span></a>
+      <button class="nav-toggle" aria-label="Menu" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="giocatori.html">Giocatori</a></li>
+        <li><a href="annali.html" class="active">Annali</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>Annali</h1>
+    <p>Anno per anno, gli eventi e i momenti che hanno fatto la storia della lega</p>
+  </div>
+
+  <!--
+    COME AGGIUNGERE UN EVENTO
+    Copia un blocco <div class="evento-card">...</div> e modifica data, titolo, descrizione.
+    Per la foto: sostituisci il div "evento-foto-placeholder" con
+      <img src="nome-foto.jpg" alt="Descrizione foto">
+    dentro il div "evento-foto".
+
+    COME AGGIUNGERE UN NUOVO ANNO
+    Copia l'intero blocco <div class="annali-year">...</div>, cambia l'anno
+    nell'header e sostituisci gli eventi al suo interno. Metti l'anno più
+    recente in cima alla pagina.
+  -->
+
+  <div class="section">
+
+    <div class="annali-year">
+      <div class="annali-year-header">
+        <span class="annali-year-num">2026/2027</span>
+        <span class="annali-year-sub">Prima stagione</span>
+      </div>
+
+      <div class="eventi-list">
+
+        <div class="evento-card">
+          <div class="evento-foto">
+            <div class="evento-foto-placeholder">📷 Foto in arrivo</div>
+          </div>
+          <div class="evento-body">
+            <div class="evento-data">5 Settembre 2026</div>
+            <div class="evento-titolo">Asta 2026/2027</div>
+            <p class="evento-desc">Si dà il via alla prima stagione del FantaRinascimento: la lega si riunisce per l'asta di apertura.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>⚽ <strong>FantaRinascimento</strong></p>
+  </footer>
+
+  <script>
+    var t = document.getElementById('nav-toggle');
+    var l = document.getElementById('nav-links');
+    t.addEventListener('click', function() {
+      t.classList.toggle('open');
+      l.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
