@@ -306,31 +306,37 @@ tbody td {
 }
 
 /* ===== ANNALI ===== */
-.annali-year { margin-bottom: 3.5rem; }
-.annali-year:last-child { margin-bottom: 0; }
-
-.annali-year-header {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid rgba(201,168,76,0.2);
+.anni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
 }
 
-.annali-year-num {
+.anno-card {
+  background: linear-gradient(135deg, var(--green-mid), var(--card-bg));
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.15s, border-color 0.2s;
+}
+.anno-card:hover { transform: translateY(-3px); border-color: var(--gold-light); }
+
+.anno-card-num {
+  display: block;
   font-family: var(--font-head);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  color: var(--gold);
+  color: var(--white);
+  margin-bottom: 0.3rem;
 }
-
-.annali-year-sub {
-  font-size: 0.78rem;
+.anno-card-sub {
+  display: block;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gray);
+  color: var(--gold);
 }
 
 .eventi-list {
@@ -470,6 +476,17 @@ tbody td {
   margin-bottom: 0.4rem;
 }
 .page-hero p { color: var(--gray); font-size: 1rem; max-width: 500px; margin: 0 auto; }
+
+.page-hero-back {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+.page-hero-back:hover { color: var(--gold-light); }
 
 /* ===== REGOLAMENTO ===== */
 .reg-section { max-width: 760px; }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Annali – FantaRinascimento</title>
+  <title>Annali 2026/2027 – FantaRinascimento</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -26,25 +26,32 @@
 
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <h1>Annali</h1>
-    <p>Anno per anno, gli eventi e i momenti che hanno fatto la storia della lega</p>
+    <a class="page-hero-back" href="annali.html">&larr; Annali</a>
+    <h1>2026/2027</h1>
+    <p>Prima stagione del FantaRinascimento</p>
   </div>
 
   <!--
-    COME AGGIUNGERE UN NUOVO ANNO
-    1. Copia un file annali-YYYY-YYYY.html esistente, rinominalo per la
-       nuova stagione e aggiorna i suoi eventi (vedi il commento in quel file).
-    2. Aggiungi qui sotto un nuovo blocco <a class="anno-card">, con il
-       nuovo anno più recente per primo.
+    COME AGGIUNGERE UN EVENTO
+    Copia un blocco <div class="evento-card">...</div> e modifica data, titolo, descrizione.
+    Per la foto: sostituisci il div "evento-foto-placeholder" con
+      <img src="nome-foto.jpg" alt="Descrizione foto">
+    dentro il div "evento-foto".
   -->
 
   <div class="section">
-    <div class="anni-grid">
+    <div class="eventi-list">
 
-      <a class="anno-card" href="annali-2026-2027.html">
-        <span class="anno-card-num">2026/2027</span>
-        <span class="anno-card-sub">Prima stagione</span>
-      </a>
+      <div class="evento-card">
+        <div class="evento-foto">
+          <div class="evento-foto-placeholder">📷 Foto in arrivo</div>
+        </div>
+        <div class="evento-body">
+          <div class="evento-data">5 Settembre 2026</div>
+          <div class="evento-titolo">Asta 2026/2027</div>
+          <p class="evento-desc">Si dà il via alla prima stagione del FantaRinascimento: la lega si riunisce per l'asta di apertura.</p>
+        </div>
+      </div>
 
     </div>
   </div>
