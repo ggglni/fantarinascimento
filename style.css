@@ -339,6 +339,106 @@ tbody td {
   color: var(--gold);
 }
 
+/* ---- Foto stagione ---- */
+.stagione-foto-frame {
+  aspect-ratio: 21 / 9;
+  background: var(--card-bg);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stagione-foto-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.stagione-foto-placeholder {
+  color: var(--gray);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+  border: 1px dashed rgba(201,168,76,0.3);
+  border-radius: 4px;
+  margin: 1.5rem;
+}
+
+/* ---- Vincitori ---- */
+.vincitori-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.vincitore-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.vincitore-logo { display: block; margin: 0 auto 0.75rem; object-fit: contain; }
+
+.vincitore-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.vincitore-tbd {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+.vincitore-squadra {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--white);
+}
+.vincitore-owner { font-size: 0.85rem; color: var(--gray); margin-top: 0.15rem; }
+
+/* ---- Partecipanti ---- */
+.partecipanti-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.partecipante-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 6px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.15s;
+}
+.partecipante-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+
+.partecipante-avatar {
+  width: 44px; height: 44px;
+  background: var(--green-mid);
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 0 auto 0.6rem;
+}
+
+.partecipante-nome { font-weight: 700; font-size: 0.9rem; color: var(--white); }
+
+@media (max-width: 640px) {
+  .vincitori-grid { grid-template-columns: 1fr; }
+}
+
 .eventi-list {
   display: flex;
   flex-direction: column;
@@ -476,6 +576,15 @@ tbody td {
   margin-bottom: 0.4rem;
 }
 .page-hero p { color: var(--gray); font-size: 1rem; max-width: 500px; margin: 0 auto; }
+
+.page-hero-kicker {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 0.3rem;
+}
 
 .page-hero-back {
   display: inline-block;

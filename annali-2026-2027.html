@@ -27,19 +27,86 @@
   <!-- PAGE HERO -->
   <div class="page-hero">
     <a class="page-hero-back" href="annali.html">&larr; Annali</a>
-    <h1>Stagione 12</h1>
-    <p>2026/2027</p>
+    <div class="page-hero-kicker">Stagione 12</div>
+    <h1>2026/2027</h1>
   </div>
 
   <!--
-    COME AGGIUNGERE UN EVENTO
+    FOTO STAGIONE
+    Sostituisci il div "stagione-foto-placeholder" con
+      <img src="nome-foto.jpg" alt="Descrizione foto">
+    dentro il div "stagione-foto-frame".
+  -->
+  <div class="section" style="padding-bottom: 0;">
+    <div class="stagione-foto-frame">
+      <div class="stagione-foto-placeholder">📷 Foto stagione in arrivo</div>
+    </div>
+  </div>
+
+  <!--
+    VINCITORI
+    Quando la stagione si conclude, sostituisci "TBD" con il nome della
+    squadra vincitrice e aggiungi il manager, es:
+      <div class="vincitore-squadra">I Gladiatori FC</div>
+      <div class="vincitore-owner">Marco R.</div>
+  -->
+  <div class="section">
+    <h2 class="section-title">Vincitori</h2>
+    <div class="section-divider"></div>
+
+    <div class="vincitori-grid">
+
+      <div class="vincitore-card">
+        <img src="logo-scudetto.png" alt="Scudetto" class="vincitore-logo" width="64" height="64" />
+        <div class="vincitore-label">Campionato</div>
+        <div class="vincitore-tbd">TBD</div>
+      </div>
+
+      <div class="vincitore-card">
+        <img src="logo-champions.png" alt="Champions League" class="vincitore-logo" width="64" height="64" />
+        <div class="vincitore-label">Champions League</div>
+        <div class="vincitore-tbd">TBD</div>
+      </div>
+
+      <div class="vincitore-card">
+        <img src="logo-coppa-italia.png" alt="Coppa Italia" class="vincitore-logo" width="64" height="64" />
+        <div class="vincitore-label">Coppa Italia</div>
+        <div class="vincitore-tbd">TBD</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--
+    PARTECIPANTI
+    Copia un blocco <div class="partecipante-card">...</div> per ogni
+    partecipante della stagione e aggiorna nome ed emoji.
+  -->
+  <div class="section">
+    <h2 class="section-title">Partecipanti</h2>
+    <div class="section-divider"></div>
+
+    <div class="partecipanti-grid">
+
+      <div class="partecipante-card">
+        <div class="partecipante-avatar">⚽</div>
+        <div class="partecipante-nome">Nome Partecipante</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--
+    EVENTI
     Copia un blocco <div class="evento-card">...</div> e modifica data, titolo, descrizione.
     Per la foto: sostituisci il div "evento-foto-placeholder" con
       <img src="nome-foto.jpg" alt="Descrizione foto">
     dentro il div "evento-foto".
   -->
-
   <div class="section">
+    <h2 class="section-title">Eventi</h2>
+    <div class="section-divider"></div>
+
     <div class="eventi-list">
 
       <div class="evento-card">
