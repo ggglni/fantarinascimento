@@ -7,9 +7,9 @@ Sito ufficiale della lega di fantacalcio **Fantarinascimento**, disponibile su [
 | Pagina | Descrizione |
 |--------|-------------|
 | `index.html` | Homepage con hero e citazione di Boškov |
-| `giocatori.html` | Schede dei 20 manager con nome squadra, anno e descrizione |
-| `albo-doro.html` | Campioni in carica (Campionato, Champions League, Coppa Italia) e storico per stagione |
-| `regolamento.html` | Regole della lega |
+| `giocatori.html` | Schede dei manager della lega, con soprannome, anno e descrizione |
+| `annali.html` | Indice delle stagioni, con una card per ogni annata |
+| `annali-2026-2027.html` | Pagina di una stagione: foto, vincitori, partecipanti ed eventi |
 
 ## Struttura
 
@@ -17,23 +17,28 @@ Sito ufficiale della lega di fantacalcio **Fantarinascimento**, disponibile su [
 fantarinascimento/
 ├── index.html
 ├── giocatori.html
-├── albo-doro.html
-├── regolamento.html
+├── annali.html
+├── annali-2026-2027.html
 ├── style.css
-├── favicon.svg
-├── champions.svg
-├── coppa-italia.svg
-└── CNAME
+├── CNAME
+├── img/
+│   ├── favicon.png
+│   ├── logo-scudetto.png
+│   ├── logo-champions.png
+│   └── logo-coppa-italia.png
+└── foto-aste/
+    └── asta_2026.jpeg
 ```
 
 ## Come aggiornare i dati
 
 Essendo un sito statico, tutti i dati si modificano direttamente nell'HTML:
 
-- **Giocatori** — `giocatori.html`: nome, squadra, anno, descrizione di ogni manager
-- **Campioni in carica** — `albo-doro.html`: sezione *Campione in Carica*, tre card per titolo
-- **Storico stagioni** — `albo-doro.html`: tabella *Tutti i Campioni*, una riga per anno
-- **Statistiche** — `albo-doro.html`: tabella *Statistiche Storiche*, titoli vinti per manager
+- **Giocatori** — `giocatori.html`: nome, soprannome, anno e descrizione di ogni manager
+- **Nuova stagione** — copia `annali-2026-2027.html`, rinominalo (es. `annali-2027-2028.html`) e aggiorna foto, vincitori, partecipanti ed eventi; aggiungi poi una card in `annali.html`
+- **Vincitori di una stagione** — nella pagina della stagione, sezione *Vincitori*: sostituisci "TBD" con squadra/manager
+- **Eventi di una stagione** — nella pagina della stagione, sezione *Eventi*: aggiungi una riga alla lista puntata
+- **Foto delle aste** — cartella `foto-aste/`
 
 ## Deploy
 
